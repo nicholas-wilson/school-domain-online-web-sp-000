@@ -15,8 +15,5 @@ class School
   end
 
   def grade(grade_num)
-    students_in_grade = []
-    @roster.each do |student, grade|
-      if grade.to_i == grade_num.to_i
-        students_in_grade
+    roster[grade_num]
 end
